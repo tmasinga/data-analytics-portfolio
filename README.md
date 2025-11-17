@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/yourusername/yourrepo/main/banner.png" width="100%" alt="Data Analytics Portfolio Banner">
+  <img src="https://raw.githubusercontent.com/tmasinga/data-analytics-portfolio/main/A_professional_digital_graphic_design_banner_intro.png.png" alt="Portfolio Banner" width="100%">
 </p>
 
 # 🚀 **Tinyiko Jully Masinga – Data Analytics Portfolio**
