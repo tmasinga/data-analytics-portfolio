@@ -43,12 +43,12 @@ Includes ARIMA predictions and YOY comparisons.
 
 ---
 
-### 🔹 **3. Customer Churn Prediction (Python + ML)**
-Machine learning classification model using:
+### 🔹 **3. Unsupervised-Learning-Predict-Analysis (Python + ML)**
+Machine learning Unsupervised model using:
 - Logistic Regression  
 - Feature Engineering  
 - Customer Risk Scoring  
-➡️ *Folder:* `03-Customer-Churn-Analysis`
+➡️ *Folder:* `03-Unsupervised-Learning-Predict-Analysis`
 
 ---
 
@@ -68,7 +68,7 @@ data-analytics-portfolio/
 │   ├── screenshots/
 │   └── README.md
 │
-├── 03-Customer-Churn-Analysis/
+├── 03-Unsupervised-Learning-Predict-Analysis/
 │   ├── dataset/
 │   ├── notebooks/
 │   ├── models/
