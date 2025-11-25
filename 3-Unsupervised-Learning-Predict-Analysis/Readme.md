@@ -1,4 +1,4 @@
-# 🧠 Unsupervised Learning Project
+# 🧠 Supervised Learning Project
 
 This repository contains an end-to-end unsupervised machine learning workflow focused on clustering, dimensionality reduction, and exploratory data analysis.  
 The project is built from the `TeamCBB6Notebook.ipynb` notebook and structured for readability, reproducibility, and portfolio presentation.
