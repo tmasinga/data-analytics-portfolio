@@ -1,91 +1,55 @@
-<h1 align="center">📈 Sales Performance Dashboard — Power BI</h1>
-
-<p align="center">
-  <img src="banner.png" width="750"/>
-</p>
 
 ---
 
-## 🟦 Overview
-This dashboard analyzes sales performance using the **Superstore Sales (Kaggle)** dataset.  
-It evaluates revenue trends, product performance, regional contribution, and customer purchasing behavior.
+# ✅ **README for Sales Dashboard**
+
+```markdown
+# 📈 Superstore Sales Dashboard – Power BI
+
+This folder contains the **Sales Performance Dashboard** developed using the Sample Superstore dataset.  
+The dashboard provides a detailed view of company revenue, profit, and product performance across different regions and segments.
 
 ---
 
-## 🟩 Objectives
-- Understand sales trends and growth  
-- Identify top-performing categories & products  
-- Compare regional performance  
-- Evaluate customer purchasing patterns  
-- Provide sales insights for decision-making  
+## 🎯 Dashboard Purpose
+To provide insights into:
+
+- Sales performance trends
+- Profitability over time
+- Product & category contribution
+- Regional business performance
+- High-level business health KPIs
 
 ---
 
-## 🟨 Dataset
-**Source:** Kaggle – *Superstore Sales Dataset*  
-Includes:  
-- Orders  
-- Sales & Profit  
-- Category & Sub-category  
-- Regions & Segments  
-- Customer information  
-
----
-
-## 🟧 Key KPIs
-### 📌 Primary Sales KPIs
+## 🔑 Key KPIs Included
 - Total Sales  
-- Total Revenue  
-- Total Orders  
-- Average Order Value (AOV)  
-- Units Sold  
-- Discount Rate  
-- Sales Growth % (MoM)
-
-### 📈 Trend Analysis
-- Monthly Sales Trend  
-- Sales YoY Comparison  
-- Profit vs Sales Trend  
-
-### 🗂 Performance Breakdown
-- Sales by Region  
-- Sales by Segment  
-- Sales by Category / Sub-category  
-- Top 10 Products  
-- Bottom 10 Products  
+- Total Profit  
+- Total Quantity  
+- Profit Margin  
+- Sales YoY Growth  
+- Profit YoY Growth  
 
 ---
 
-## 🟪 Dashboard Preview
-<p align="center">
-  <img src="dashboard_screenshot.png" width="750"/>
-</p>
+## 📊 Visuals Included
+- Line Chart – Sales Over Time  
+- Map – Sales by State  
+- Bar Chart – Category & Sub-Category Performance  
+- Profit by Segment  
+- Top 10 Products by Sales  
+- Bottom 10 Products by Profit  
+- KPI Cards for Sales, Profit, Quantity  
 
 ---
 
-## 🟫 Skills Used
-- Power BI Desktop  
-- Data Cleaning (Power Query)  
-- DAX Calculations  
-- Data Modelling  
-- Data Visualization  
-- Sales Trend Analysis  
-- Business Reporting  
-
----
-
-## 🔵 DAX Measures
+## 🧠 DAX Logic Highlights
 ```DAX
-Total Sales = SUM('Orders'[Sales])
+Total Sales = SUM(Orders[Sales])
 
-Total Orders = DISTINCTCOUNT('Orders'[Order ID])
+Total Profit = SUM(Orders[Profit])
 
-Units Sold = SUM('Orders'[Quantity])
+Total Quantity = SUM(Orders[Quantity])
 
-AOV = DIVIDE([Total Sales], [Total Orders], 0)
-
-Sales Growth % = 
-VAR ThisMonth = [Total Sales]
-VAR LastMonth = CALCULATE([Total Sales], DATEADD('Orders'[Order Date], -1, MONTH))
-RETURN DIVIDE(ThisMonth - LastMonth, LastMonth, 0)
-
+Profit Margin = 
+DIVIDE([Total Profit], [Total Sales])
